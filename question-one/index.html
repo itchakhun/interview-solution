@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    .row {
+      display: grid;
+      grid-template-rows: 100vh;
+      grid-template-columns: 200px minmax(100px, 1fr) 300px;
+    }
+    .col {
+      display: grid;
+      place-items: center;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col">
+      <input type="text" placeholder="Enter number">
+    </div>
+    <div class="col">
+      <select name="number-type" id="select-number-type">
+        <option value="0">isPrime</option>
+        <option value="1">isFibanacci</option>
+      </select>
+    </div>
+    <div class="col">
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="solution-1.js"></script>
+</body>
+</html>
